@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="css/todo.css" />
+  <body>
+    <form>
+      <div class="add-task">
+        <label class="new-task-label" for="task-input">New Task:</label>
+        <input id="task-input" name="task-input" />
+        <button id="add-task-button">Add</button>
+      </div>
+      <ol class="task-list">
+      </ol>
+    </form>
+    <script type="text/template" id="task-item-template">
+      <li class="task-item">
+        <label>
+          <input type="checkbox" /> $name$
+        </label>
+      </li>
+    </script>
+    <script type="text/javascript" src="js/todo.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(event) {
+        window.App.init();
+      });
+    </script>
+  </body>
+</html>

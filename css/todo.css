@@ -1,0 +1,20 @@
+/* CSS for To-Do App */
+
+/* Very basic reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.new-task-label {
+  width: 100px;
+}
+
+.task-list {
+  list-style: none;
+  margin-left: 75px; /* Align with input */
+}
+
+.task-item.is-checked {
+  text-decoration: line-through;
+}
